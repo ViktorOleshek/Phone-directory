@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kursova_OOP_3sem.AddElementWindow" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AddElementWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.CAddress">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAJAAAAAAAA=</HashCode>
+      <FileName>Adress folder\Adress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova_OOP_3sem.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="7" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>QABJYAAAAAgAAAgCIAAAAQAIAAEgABAAAAACQBAACEA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.PhoneDirectory">
+    <Position X="3.75" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAAAAAAAAAAQAQABBCAAAACAAAACAIAAAA=</HashCode>
+      <FileName>Phone\PhoneDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova_OOP_3sem.R1" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAgAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>R1.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.R2" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAACAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>R2.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.R3" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAIAAAAAAAAAA=</HashCode>
+      <FileName>R3.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.R4" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>R4.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Kursova_OOP_3sem.R5" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAgAAAAAAA=</HashCode>
+      <FileName>R5.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.454" Collapsed="true" />
+  </Class>
+  <Class Name="System.Windows.Window">
+    <Position X="8.25" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="Activate" Hidden="true" />
+      <Event Name="Activated" Hidden="true" />
+      <Property Name="AllowsTransparency" Hidden="true" />
+      <Field Name="AllowsTransparencyProperty" Hidden="true" />
+      <Method Name="ArrangeOverride" Hidden="true" />
+      <Event Name="Closed" Hidden="true" />
+      <Event Name="Closing" Hidden="true" />
+      <Event Name="ContentRendered" Hidden="true" />
+      <Event Name="Deactivated" Hidden="true" />
+      <Property Name="DialogResult" Hidden="true" />
+      <Event Name="DpiChanged" Hidden="true" />
+      <Field Name="DpiChangedEvent" Hidden="true" />
+      <Method Name="DragMove" Hidden="true" />
+      <Method Name="GetWindow" Hidden="true" />
+      <Method Name="Hide" Hidden="true" />
+      <Property Name="Icon" Hidden="true" />
+      <Field Name="IconProperty" Hidden="true" />
+      <Property Name="IsActive" Hidden="true" />
+      <Field Name="IsActiveProperty" Hidden="true" />
+      <Property Name="Left" Hidden="true" />
+      <Field Name="LeftProperty" Hidden="true" />
+      <Event Name="LocationChanged" Hidden="true" />
+      <Property Name="LogicalChildren" Hidden="true" />
+      <Method Name="MeasureOverride" Hidden="true" />
+      <Method Name="OnActivated" Hidden="true" />
+      <Method Name="OnClosed" Hidden="true" />
+      <Method Name="OnClosing" Hidden="true" />
+      <Method Name="OnContentChanged" Hidden="true" />
+      <Method Name="OnContentRendered" Hidden="true" />
+      <Method Name="OnCreateAutomationPeer" Hidden="true" />
+      <Method Name="OnDeactivated" Hidden="true" />
+      <Method Name="OnDpiChanged" Hidden="true" />
+      <Method Name="OnLocationChanged" Hidden="true" />
+      <Method Name="OnManipulationBoundaryFeedback" Hidden="true" />
+      <Method Name="OnSourceInitialized" Hidden="true" />
+      <Method Name="OnStateChanged" Hidden="true" />
+      <Method Name="OnVisualChildrenChanged" Hidden="true" />
+      <Method Name="OnVisualParentChanged" Hidden="true" />
+      <Property Name="OwnedWindows" Hidden="true" />
+      <Property Name="Owner" Hidden="true" />
+      <Property Name="ResizeMode" Hidden="true" />
+      <Field Name="ResizeModeProperty" Hidden="true" />
+      <Property Name="RestoreBounds" Hidden="true" />
+      <Property Name="ShowActivated" Hidden="true" />
+      <Field Name="ShowActivatedProperty" Hidden="true" />
+      <Property Name="ShowInTaskbar" Hidden="true" />
+      <Field Name="ShowInTaskbarProperty" Hidden="true" />
+      <Property Name="SizeToContent" Hidden="true" />
+      <Field Name="SizeToContentProperty" Hidden="true" />
+      <Event Name="SourceInitialized" Hidden="true" />
+      <Event Name="StateChanged" Hidden="true" />
+      <Property Name="TaskbarItemInfo" Hidden="true" />
+      <Field Name="TaskbarItemInfoProperty" Hidden="true" />
+      <Property Name="Title" Hidden="true" />
+      <Field Name="TitleProperty" Hidden="true" />
+      <Property Name="Top" Hidden="true" />
+      <Property Name="Topmost" Hidden="true" />
+      <Field Name="TopmostProperty" Hidden="true" />
+      <Field Name="TopProperty" Hidden="true" />
+      <Property Name="WindowStartupLocation" Hidden="true" />
+      <Property Name="WindowState" Hidden="true" />
+      <Field Name="WindowStateProperty" Hidden="true" />
+      <Property Name="WindowStyle" Hidden="true" />
+      <Field Name="WindowStyleProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Kursova_OOP_3sem.WindowWithList">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface WindowWithList\WindowWithList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

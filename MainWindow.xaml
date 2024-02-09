@@ -1,0 +1,141 @@
+﻿<Window x:Class="Kursova_OOP_3sem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursova_OOP_3sem"
+        mc:Ignorable="d"
+        Title="Kursova" Height="600" Width="1020" Loaded="StartProgram" 
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <Style TargetType="Label">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView x:Name="MainList" FontSize="16" Height="Auto" Width="Auto" Margin="10,40,10,260" 
+                  VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=25}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header ="№" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Surname}" Header ="Surname" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header ="Name" />
+                    <GridViewColumn Header="Address">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}{0}, {1}, {2}">
+                                            <Binding Path="Address.City" />
+                                            <Binding Path="Address.Street" />
+                                            <Binding Path="Address.HouseNumber" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding PhoneNumber}" Header ="Phone number" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Button Content="Add element" Margin="0,0,10,190" Click="Button_AddElement"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Content="Delete element" Margin="0,0,10,100" Click="Button_RemoveSelectedElement"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        
+        <Button Click="Button1_FindAddressAndPhoneNumberBySurname" Margin="200,0,0,190"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="160">
+            <StackPanel>
+                <TextBlock Text="Find address and phone-" />
+                <TextBlock Text="number by surname" />
+            </StackPanel>
+        </Button>
+        <Label Content="Enter surname:" Margin="10,0,0,225" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TextBox_SurnameForFindAddress" Margin="10,0,0,190"
+                 HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        
+        <Button Click="Button2_FindSurnameAndAddressByPhonenumber" Margin="200,0,0,100"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="160">
+            <StackPanel>
+                <TextBlock Text="Find surname and address" />
+                <TextBlock Text="by phonenumber" />
+            </StackPanel>
+        </Button>
+        <Label Content="Enter phonenumber:" Margin="10,0,0,135" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TextBox_PhonenumberForFindSurnameAndAddress" Margin="10,0,0,100"
+                 HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        
+        <Button   Click="Button3_FindSurnameAndNameByAddress" Margin="200,0,0,10"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="160">
+            <StackPanel>
+                <TextBlock Text="Find surname and name" />
+                <TextBlock Text="by address" />
+            </StackPanel>
+        </Button>
+        <Label Content="Enter address:" Margin="10,0,0,45" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TextBox_AddressForFindSurnameAndName" Margin="10,0,0,10" 
+                 HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        
+        <Button   Click="Button4_FindNameAndSurnameWithSameAddress" Margin="390,0,0,10"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="Auto">
+            <StackPanel>
+                <TextBlock Text="Find surname and name" />
+                <TextBlock Text="with same address" />
+            </StackPanel>
+        </Button>
+
+        <Label Content="Enter phonenumber:" Margin="0,0,290,135" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TextBox_PhonenumberForFindNameAndAddress" Margin="0,0,290,100"
+                 HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Click="Button5_FindNameAndAddressByPhoneNumber" Margin="0,0,290,10"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <StackPanel>
+                <TextBlock Text="Find name and street" />
+                <TextBlock Text="by phonenumber" />
+            </StackPanel>
+        </Button>
+        
+        <Button Content="Group same address" Margin="0,0,120,10" Click="Button6_GroupSameAddress"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Content="Sort" Margin="0,0,10,10" Click="Button7_SortShella"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="80"/>
+        
+        <Menu Height="25" FontSize="16" Margin="10,10,10,0"
+              HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="MenuItem_Open"/>
+                <MenuItem Header="Save" Click="MenuItem_Save"/>
+            </MenuItem>
+            <MenuItem Header="Function">
+                <MenuItem Header="Find address and phonenumber by surname" Click="Button1_FindAddressAndPhoneNumberBySurname"/>
+                <MenuItem Header="Find surname and address by phonenumber" Click="Button2_FindSurnameAndAddressByPhonenumber"/>
+                <MenuItem Header="Find surname and name by address" Click="Button3_FindSurnameAndNameByAddress"/>
+                <MenuItem Header="Find surname and name with same address" Click="Button4_FindNameAndSurnameWithSameAddress"/>
+                <MenuItem Header="Find name and street by phonenumber" Click="Button5_FindNameAndAddressByPhoneNumber"/>
+                <MenuItem Header="Group same address" Click="Button6_GroupSameAddress"/>
+                <MenuItem Header="Sort" Click="Button7_SortShella"/>
+            </MenuItem>
+            <MenuItem Header="Help" Click="MenuItem_Help">
+            </MenuItem>
+            <MenuItem Header="Exit" Click="MenuItem_Exit">
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
